@@ -1,0 +1,4 @@
+period,actual_rate,reported_rate,target_rate
+Period 1,0.023,0.023,0.010
+Period 2,0.022,0.021,0.010
+Period 3,0.021,0.020,0.010
