@@ -34,17 +34,23 @@ Quality management depends on measures, but high-stakes targets can change the b
 
 ## Screenshots
 
-Release screenshots will be added from the deployed application. Planned captures:
+### Application overview
 
-1. Application overview and scenario controls.
-2. Quality Mirage chart and integrity diagnostic.
-3. Side-by-side scenario comparison.
-4. SPC Integrity view.
-5. Cost of Quality view.
-6. Metric Audit view.
-7. Validated synthetic CSV import or methodology view.
+[![Quality Metrics Integrity Lab overview](screenshots/01-app-overview.png)](https://quality-metrics-integrity-lab-sayakiitr.streamlit.app/)
 
-See [screenshots/README.md](screenshots/README.md) for capture guidance.
+| Quality Mirage | Scenario comparison |
+| --- | --- |
+| ![Actual versus reported quality paths](screenshots/02-quality-mirage.png) | ![Healthy versus high-pressure scenario comparison](screenshots/03-scenario-comparison.png) |
+
+| SPC Integrity | Cost of Quality |
+| --- | --- |
+| ![Real versus sanitised p-chart](screenshots/04-spc-integrity.png) | ![Internal versus downstream quality-cost impact](screenshots/05-cost-of-quality.png) |
+
+| Metric Audit | CSV import |
+| --- | --- |
+| ![Metric Audit risk signals and recommendations](screenshots/06-metric-audit.png) | ![Validated CSV import workflow](screenshots/07-csv-import.png) |
+
+All screenshots use built-in hypothetical scenarios or synthetic data only.
 
 ## Analytical modules
 
@@ -191,7 +197,7 @@ quality-metrics-integrity-lab/
 ├── tests/                    # Unit, integration, and headless Streamlit tests
 ├── data/                     # Synthetic sample and import template
 ├── docs/                     # Methodology and release-readiness notes
-├── screenshots/              # Public screenshot placeholders
+├── screenshots/              # Public release screenshots
 ├── .github/workflows/        # Automated test workflow
 ├── requirements.txt
 ├── PROJECT_SPEC.md
