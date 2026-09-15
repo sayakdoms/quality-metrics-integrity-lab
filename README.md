@@ -2,6 +2,9 @@
 
 > “A quality metric can improve while the underlying process deteriorates.”
 
+[![Live App](https://img.shields.io/badge/Live%20App-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://quality-metrics-integrity-lab-sayakiitr.streamlit.app/)
+[![tests](https://github.com/sayakdoms/quality-metrics-integrity-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/sayakdoms/quality-metrics-integrity-lab/actions/workflows/tests.yml)
+
 Quality Metrics Integrity Lab is an interactive Streamlit simulation for exploring Goodhart's Law, KPI gaming risk, and measurement integrity in quality management. It separates a hypothetical underlying defect process from its reported metric so users can inspect how incentives, reporting choices, and measurement-system weaknesses can create a “Quality Mirage.”
 
 Built by **Sayak Pranab Ghosh — MBA, IIT Roorkee**.
@@ -10,7 +13,7 @@ Built by **Sayak Pranab Ghosh — MBA, IIT Roorkee**.
 
 The lab combines transparent calculations, deterministic synthetic simulations, scenario presets, comparison tools, and an audit checklist. Every result is educational and inspectable. The application does not claim empirical calibration, predictive accuracy, or proof of misconduct.
 
-**Live demo:** _Streamlit Community Cloud link will be added after deployment._
+**Live demo:** [Launch Quality Metrics Integrity Lab](https://quality-metrics-integrity-lab-sayakiitr.streamlit.app/)
 
 ## Why this project exists
 
@@ -168,7 +171,7 @@ Choose a preset or adjust the sidebar controls. Review the five analytical tabs,
 ## Testing
 
 ```bash
-pytest -q
+python -m pytest -q
 ```
 
 The suite covers model invariants, validation boundaries, deterministic seeds, presets, diagnostics, export schemas, comparison deltas, CSV parsing, sample-data integrity, and headless Streamlit interactions. GitHub Actions runs the same suite on Python 3.12.
@@ -226,9 +229,15 @@ The 2021 general performance-measurement article is authored by Fisher alone; th
 - Add automated browser-level visual regression checks.
 - Evaluate a downloadable report format after comparison workflows stabilize.
 
-## Release preparation
+## Release status
 
-Suggested repository metadata, Git initialization commands, v0.3.0 release notes, deployment checks, and LinkedIn copy are prepared in [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md). No repository initialization, push, deployment, or remote creation has been performed.
+Quality Metrics Integrity Lab v0.3.0 is published on GitHub and deployed on Streamlit Community Cloud.
+
+- **Live app:** https://quality-metrics-integrity-lab-sayakiitr.streamlit.app/
+- **Repository:** https://github.com/sayakdoms/quality-metrics-integrity-lab
+- **CI:** GitHub Actions on Python 3.12
+
+Release notes, deployment guidance, and LinkedIn copy are maintained in [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md).
 
 ## License
 
